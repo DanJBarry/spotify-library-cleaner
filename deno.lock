@@ -1,0 +1,53 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@es-toolkit/es-toolkit@*": "1.32.0",
+    "jsr:@panva/oauth4webapi@*": "3.1.4",
+    "jsr:@panva/oauth4webapi@^3.1.4": "3.1.4",
+    "jsr:@soundify/web-api@*": "1.1.5",
+    "jsr:@soundify/web-api@^1.1.5": "1.1.5",
+    "jsr:@std/assert@1": "1.0.11",
+    "jsr:@std/cli@*": "1.0.20",
+    "jsr:@std/internal@^1.0.5": "1.0.5"
+  },
+  "jsr": {
+    "@es-toolkit/es-toolkit@1.32.0": {
+      "integrity": "cbc7147d53e0ea5d218ed42cccc9b8f018c44871ae4ac5f44e7171c4c3a93fd3"
+    },
+    "@panva/oauth4webapi@3.1.4": {
+      "integrity": "358731c861a3bc8ea0973a6297089e11762f066396f052b83f3b533b7372e088"
+    },
+    "@soundify/web-api@1.1.5": {
+      "integrity": "4916a2cdad9a6a25003524a9389230e157ff2c21c6954f3fa8b9f28436fd6835"
+    },
+    "@std/assert@1.0.11": {
+      "integrity": "2461ef3c368fe88bc60e186e7744a93112f16fd110022e113a0849e94d1c83c1",
+      "dependencies": [
+        "jsr:@std/internal"
+      ]
+    },
+    "@std/cli@1.0.20": {
+      "integrity": "a8c384a2c98cec6ec6a2055c273a916e2772485eb784af0db004c5ab8ba52333"
+    },
+    "@std/internal@1.0.5": {
+      "integrity": "54a546004f769c1ac9e025abd15a76b6671ddc9687e2313b67376125650dc7ba"
+    }
+  },
+  "redirects": {
+    "https://deno.land/x/lodash/chunk.js": "https://deno.land/x/lodash@4.17.19/chunk.js"
+  },
+  "remote": {
+    "https://cdn.skypack.dev/-/@types/lodash@v4.17.15-FNxYEk7HZZY9qqwo0w1x/dist=es2019,mode=imports/optimized/@types/lodash.js": "5d71afac9a0636b438aff7daa03026bc53a42b37fb59459792dee56119b9ae05",
+    "https://cdn.skypack.dev/-/lodash-es@v4.17.21-rDGl8YjBUjcrrAbjNrmo/dist=es2019,mode=imports/optimized/lodash-es.js": "4a1b35d34b5e0d3ae68aa46ddaabb9700ccecb75b830974db7c46a271f10daa8",
+    "https://cdn.skypack.dev/@types/lodash?dts": "b2d14dccbb1f3ccc0a3a3c5006efc9a568a686079a4ab509e4cc860ffcd85f19",
+    "https://cdn.skypack.dev/error/unknown:lodash?from=lodash-es": "c042c6105b8140042d5fe8fc6406d0a2296b10a94e5e0a31c0c68bc9b84e6ec5",
+    "https://cdn.skypack.dev/lodash-es?dts": "7dc1d11c01e46bf442774791267f7ca93f6cc204451ac648f2560b0cd6c91524"
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@panva/oauth4webapi@^3.1.4",
+      "jsr:@soundify/web-api@^1.1.5",
+      "jsr:@std/assert@1"
+    ]
+  }
+}
