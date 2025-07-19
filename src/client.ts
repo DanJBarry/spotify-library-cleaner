@@ -1,6 +1,6 @@
 import { createAuthUrl, getAccessToken, validateAuthResponse } from "./auth.ts";
 import * as oauth from "jsr:@panva/oauth4webapi";
-import { OAUTH_SCOPES } from "@soundify/web-api/auth";
+import { OAUTH_SCOPES } from "jsr:@soundify/web-api/auth";
 import { open } from "./open.ts";
 
 const {

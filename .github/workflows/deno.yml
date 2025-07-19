@@ -41,18 +41,33 @@ jobs:
       # - name: Run tests
       #  run: deno test -A
 
-      - name: Run compiler
-        run: deno compile --target x86_64-pc-windows-msvc --allow-net --allow-run --allow-read main.ts
+      - name: Run esbuild
+        run: deno run build
+
+      - name: Compile x86_64-pc-windows-msvc
+        run: deno compile --target x86_64-pc-windows-msvc --output dist/spotify-library-cleaner-x86_64-pc-windows-msvc --allow-net --allow-run --allow-read main.ts
+
+      - name: Compile x86_64-apple-darwin
+        run: deno compile --target x86_64-apple-darwin --output dist/spotify-library-cleaner-x86_64-apple-darwin --allow-net --allow-run --allow-read main.ts
+
+      - name: Compile aarch64-apple-darwin
+        run: deno compile --target aarch64-apple-darwin --output dist/spotify-library-cleaner-aarch64-apple-darwin --allow-net --allow-run --allow-read main.ts
+
+      - name: Compile x86_64-unknown-linux-gnu
+        run: deno compile --target x86_64-unknown-linux-gnu --output dist/spotify-library-cleaner-x86_64-unknown-linux-gnu --allow-net --allow-run --allow-read main.ts
+
+      - name: Compile aarch64-unknown-linux-gnu
+        run: deno compile --target x86_64-pc-windows-msvc --output dist/spotify-library-cleaner-aarch64-unknown-linux-gnu --allow-net --allow-run --allow-read main.ts
 
       - uses: actions/upload-artifact@v4.6.2
         with:
           # Name of the artifact to upload.
           # Optional. Default is 'artifact'
-          name: spotify-library-cleaner-x86_64-pc-windows-msvc.exe
+          name: dist
 
           # A file, directory or wildcard pattern that describes what to upload
           # Required.
-          path: spotify-library-cleaner.exe
+          path: dist
 
           # The desired behavior if no files are found using the provided path.
           # Available Options:

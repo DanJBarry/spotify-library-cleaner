@@ -8,7 +8,7 @@
     "jsr:@soundify/web-api@^1.1.5": "1.1.5",
     "jsr:@std/assert@1": "1.0.11",
     "jsr:@std/cli@*": "1.0.20",
-    "jsr:@std/internal@^1.0.5": "1.0.5"
+    "jsr:@std/internal@^1.0.5": "1.0.9"
   },
   "jsr": {
     "@es-toolkit/es-toolkit@1.32.0": {
@@ -29,19 +29,15 @@
     "@std/cli@1.0.20": {
       "integrity": "a8c384a2c98cec6ec6a2055c273a916e2772485eb784af0db004c5ab8ba52333"
     },
-    "@std/internal@1.0.5": {
-      "integrity": "54a546004f769c1ac9e025abd15a76b6671ddc9687e2313b67376125650dc7ba"
+    "@std/internal@1.0.9": {
+      "integrity": "bdfb97f83e4db7a13e8faab26fb1958d1b80cc64366501af78a0aee151696eb8"
     }
   },
-  "redirects": {
-    "https://deno.land/x/lodash/chunk.js": "https://deno.land/x/lodash@4.17.19/chunk.js"
-  },
   "remote": {
-    "https://cdn.skypack.dev/-/@types/lodash@v4.17.15-FNxYEk7HZZY9qqwo0w1x/dist=es2019,mode=imports/optimized/@types/lodash.js": "5d71afac9a0636b438aff7daa03026bc53a42b37fb59459792dee56119b9ae05",
-    "https://cdn.skypack.dev/-/lodash-es@v4.17.21-rDGl8YjBUjcrrAbjNrmo/dist=es2019,mode=imports/optimized/lodash-es.js": "4a1b35d34b5e0d3ae68aa46ddaabb9700ccecb75b830974db7c46a271f10daa8",
-    "https://cdn.skypack.dev/@types/lodash?dts": "b2d14dccbb1f3ccc0a3a3c5006efc9a568a686079a4ab509e4cc860ffcd85f19",
-    "https://cdn.skypack.dev/error/unknown:lodash?from=lodash-es": "c042c6105b8140042d5fe8fc6406d0a2296b10a94e5e0a31c0c68bc9b84e6ec5",
-    "https://cdn.skypack.dev/lodash-es?dts": "7dc1d11c01e46bf442774791267f7ca93f6cc204451ac648f2560b0cd6c91524"
+    "https://deno.land/x/denoflate@1.2.1/mod.ts": "f5628e44b80b3d80ed525afa2ba0f12408e3849db817d47a883b801f9ce69dd6",
+    "https://deno.land/x/denoflate@1.2.1/pkg/denoflate.js": "b9f9ad9457d3f12f28b1fb35c555f57443427f74decb403113d67364e4f2caf4",
+    "https://deno.land/x/denoflate@1.2.1/pkg/denoflate_bg.wasm.js": "d581956245407a2115a3d7e8d85a9641c032940a8e810acbd59ca86afd34d44d",
+    "https://deno.land/x/esbuild@v0.25.7/mod.js": "c9c92a85ea40a9e12bf8f5eb6ad03679c1071dd26a6783dec503bda4cf5d8466"
   },
   "workspace": {
     "dependencies": [

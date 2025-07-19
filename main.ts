@@ -150,7 +150,9 @@ const main = async () => {
     console.log("  --clean-albums        Remove old albums from library");
     console.log("  --clean-liked-songs   Remove old tracks from liked songs");
     console.log("  --clean-playlists     Remove old tracks from playlists");
-    console.log(`  --client-id <id>      Spotify App client ID (default: ${SPOTIFY_CLIENT_ID})`);
+    console.log(
+      `  --client-id <id>      Spotify App client ID (default: ${SPOTIFY_CLIENT_ID})`,
+    );
     return 0;
   }
 
